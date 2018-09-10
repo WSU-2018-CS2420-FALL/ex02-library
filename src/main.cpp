@@ -37,6 +37,8 @@ int main(){
   lib.checkin(b);
   printTransactions(lib);
 
+  delete b;
+  delete a;
 
   return 0;
 }
