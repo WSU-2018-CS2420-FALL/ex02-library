@@ -8,7 +8,8 @@ public:
   Audio(const std::string& title, const std::string& isbn, const std::string& author, double hours);
   double getHours() const { return hours; }
 
-  std::string str();
+  std::string kind() const;
+  std::string str() const;
 
 private:
   double hours;

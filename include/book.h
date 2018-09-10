@@ -14,7 +14,8 @@ public:
   const std::string& getIsbn() const { return isbn; }
   const std::string& getAuthor() const { return author; }
 
-  virtual std::string str();
+  virtual std::string kind() const = 0;
+  virtual std::string str() const;
 
   virtual ~Book(){}
 private:
@@ -24,8 +25,6 @@ private:
   std::string title;
   std::string isbn;
   std::string author;
-  int year;
-  std::string status;
 };
 
 #endif

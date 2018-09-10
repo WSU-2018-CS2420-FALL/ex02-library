@@ -9,7 +9,8 @@ public:
 
   int getPages() const { return pages; }
 
-  std::string str();
+  std::string kind() const;
+  std::string str() const;
 
 private:
   int pages;

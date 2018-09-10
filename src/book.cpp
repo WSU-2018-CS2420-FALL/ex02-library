@@ -10,7 +10,7 @@ Book::Book(const string& title, const string& isbn, const string& author):
     isbn(isbn),
     author(author){}
 
-string Book::str(){
+string Book::str() const{
   stringstream sout;
   sout << "  Id: " << id << endl
        << "  Title: " << title << endl
